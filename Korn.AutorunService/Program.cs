@@ -11,7 +11,7 @@ namespace Korn.AutorunService
             {
                 new Service()
             };
-            ServiceBase.Run(ServicesToRun);
+            ServiceBase.Run(ServicesToRun);           
         }
     }
 }

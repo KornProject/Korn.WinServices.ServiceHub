@@ -22,8 +22,9 @@ namespace Korn.AutorunService
 
             while (true)
             {
-                if (Process.GetProcessesByName("Korn.Service").Length == 0)
-                    Process.Start(servicePath);
+                if (Process.GetProcessesByName("NoKornAutorunSign").Length == 0)
+                    if (Process.GetProcessesByName("Korn.Service").Length == 0)
+                        Process.Start(servicePath);
 
                 Thread.Sleep(5000);
             }
