@@ -41,9 +41,6 @@
     <OutputPath>bin\x64\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Korn.Utils.System.netframework">
-      <HintPath>..\..\Korn.Utils.System\Korn.Utils.System.netframework\bin\Debug\Korn.Utils.System.netframework.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -79,6 +76,16 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Korn.Shared\Korn.Shared\Korn.Shared.csproj">
+      <Project>{83a95dff-9638-4a00-b5eb-36fa69024335}</Project>
+      <Name>Korn.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Korn.Utils.System\Korn.Utils.System\Korn.Utils.System.csproj">
+      <Project>{58fbee0d-dd5f-4cf2-83fc-9e4a8431e779}</Project>
+      <Name>Korn.Utils.System</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
