@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Utils.System", "..\Kor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Shared", "..\Korn.Shared\Korn.Shared\Korn.Shared.csproj", "{83A95DFF-9638-4A00-B5EB-36FA69024335}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Shared.Internal", "..\Korn.Shared.Internal\Korn.Shared.Internal\Korn.Shared.Internal.csproj", "{853310CB-5E1A-4E30-9F08-D6C8B758118E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Logger", "..\Korn.Logger\Korn.Logger\Korn.Logger.csproj", "{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,22 @@ Global
 		{83A95DFF-9638-4A00-B5EB-36FA69024335}.Release|Any CPU.Build.0 = Release|x64
 		{83A95DFF-9638-4A00-B5EB-36FA69024335}.Release|x64.ActiveCfg = Release|x64
 		{83A95DFF-9638-4A00-B5EB-36FA69024335}.Release|x64.Build.0 = Release|x64
+		{853310CB-5E1A-4E30-9F08-D6C8B758118E}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{853310CB-5E1A-4E30-9F08-D6C8B758118E}.Debug|Any CPU.Build.0 = Debug|x64
+		{853310CB-5E1A-4E30-9F08-D6C8B758118E}.Debug|x64.ActiveCfg = Debug|x64
+		{853310CB-5E1A-4E30-9F08-D6C8B758118E}.Debug|x64.Build.0 = Debug|x64
+		{853310CB-5E1A-4E30-9F08-D6C8B758118E}.Release|Any CPU.ActiveCfg = Release|x64
+		{853310CB-5E1A-4E30-9F08-D6C8B758118E}.Release|Any CPU.Build.0 = Release|x64
+		{853310CB-5E1A-4E30-9F08-D6C8B758118E}.Release|x64.ActiveCfg = Release|x64
+		{853310CB-5E1A-4E30-9F08-D6C8B758118E}.Release|x64.Build.0 = Release|x64
+		{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73}.Debug|Any CPU.Build.0 = Debug|x64
+		{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73}.Debug|x64.ActiveCfg = Debug|x64
+		{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73}.Debug|x64.Build.0 = Debug|x64
+		{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73}.Release|Any CPU.ActiveCfg = Release|x64
+		{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73}.Release|Any CPU.Build.0 = Release|x64
+		{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73}.Release|x64.ActiveCfg = Release|x64
+		{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +70,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{58FBEE0D-DD5F-4CF2-83FC-9E4A8431E779} = {75C76751-E594-4BAD-9788-4BDC44C5AA50}
 		{83A95DFF-9638-4A00-B5EB-36FA69024335} = {75C76751-E594-4BAD-9788-4BDC44C5AA50}
+		{853310CB-5E1A-4E30-9F08-D6C8B758118E} = {75C76751-E594-4BAD-9788-4BDC44C5AA50}
+		{D5FBB7E8-F3DA-4EB3-B5BA-CDE7ACD35A73} = {75C76751-E594-4BAD-9788-4BDC44C5AA50}
 	EndGlobalSection
 EndGlobal

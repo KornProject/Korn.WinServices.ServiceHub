@@ -10,13 +10,10 @@ namespace Korn.AutorunService
 {
     public partial class Service : ServiceBase
     {
-        public Service()
-        {
-            InitializeComponent();
-        }
+        public Service() => InitializeComponent();
 
-        const string KORN_DISABLE_AUTORUN_SERVICE_VAR = "KORN_DISABLE_AUTORUN_SERVICE";       
-        static string ServicePath = Path.Combine(KornShared.RootDirectory, "Service", "bin", "Korn.Service.exe");
+        const string KORN_DISABLE_AUTORUN_SERVICE_VAR = "KORN_DISABLE_AUTORUN_SERVICE";
+        static readonly string ServicePath = Path.Combine(KornShared.RootDirectory, "Service", "bin", "Korn.Service.exe");
         static TimeSpan Delay = TimeSpan.FromSeconds(5);
 
         protected override void OnStart(string[] args)
