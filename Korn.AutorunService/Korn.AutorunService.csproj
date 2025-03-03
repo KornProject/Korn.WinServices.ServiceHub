@@ -81,6 +81,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Korn.Installer.Core\Korn.Installer.Core\Korn.Installer.Core.csproj">
+      <Project>{45c289bc-9087-45fc-b2ba-528520a357e7}</Project>
+      <Name>Korn.Installer.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Korn.Interface\Korn.Interface\Korn.Interface.csproj">
+      <Project>{52fb19d7-7d62-4077-932f-b3f3490a0306}</Project>
+      <Name>Korn.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Korn.Logger\Korn.Logger\Korn.Logger.csproj">
       <Project>{d5fbb7e8-f3da-4eb3-b5ba-cde7acd35a73}</Project>
       <Name>Korn.Logger</Name>
@@ -92,6 +100,10 @@
     <ProjectReference Include="..\..\Korn.Shared\Korn.Shared\Korn.Shared.csproj">
       <Project>{83a95dff-9638-4a00-b5eb-36fa69024335}</Project>
       <Name>Korn.Shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Korn.Utils.GithubExplorer\Korn.Utils.GithubExplorer\Korn.Utils.GithubExplorer.csproj">
+      <Project>{d588cc6c-8ebf-40f8-b14c-17ac5106335e}</Project>
+      <Name>Korn.Utils.GithubExplorer</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Korn.Utils.System\Korn.Utils.System\Korn.Utils.System.csproj">
       <Project>{58fbee0d-dd5f-4cf2-83fc-9e4a8431e779}</Project>
