@@ -14,22 +14,19 @@ namespace Korn.AutorunService
         public Service() => InitializeComponent();
 
         const string KORN_DISABLE_AUTORUN_SERVICE_VAR = "KORN_DISABLE_AUTORUN_SERVICE";
-        static readonly string ServicePath = Path.Combine(KornShared.RootDirectory, "Service", "bin", "Korn.Service.exe");
+        const string ServicePath = Korn.Interface.ServiceModule.Service.ExecutableFile;
+        const string ServiceProcessName = Korn.Interface.ServiceModule.Service.ServiceProcessName;
         static TimeSpan Delay = TimeSpan.FromSeconds(3);
 
-        protected override void OnStart(string[] args)
-        {
-            new Thread(Body).Start();
-        }
+        protected override void OnStart(string[] args) => new Thread(Body).Start();
 
         void Body()
         {
             while (true)
             {
-                if (Process.GetProcessesByName("Korn.Service").Length == 0)
+                if (!ProcessUtils.IsProcessExists(ServiceProcessName))
                 {
-                    var variable = SystemVariablesUtils.GetVariable(KORN_DISABLE_AUTORUN_SERVICE_VAR);
-                    if (variable == null || !(variable == "1" || variable.Equals("true", StringComparison.OrdinalIgnoreCase)))
+                    if (!SystemVariablesUtils.IsVariableTrue(KORN_DISABLE_AUTORUN_SERVICE_VAR))
                     {
                         InstallerCore.CheckUpdates();
                         Process.Start(ServicePath);
