@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.WinServices.ServiceHub", "Korn.WinServices.ServiceHub\Korn.WinServices.ServiceHub.csproj", "{5A9ACD95-861B-4B7C-99F2-BC03D2D93FA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Korn", "Korn", "{75C76751-E594-4BAD-9788-4BDC44C5AA50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Utils.System", "..\Korn.Utils.System\Korn.Utils.System\Korn.Utils.System.csproj", "{58FBEE0D-DD5F-4CF2-83FC-9E4A8431E779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Installer.Core", "..\Korn.Installer.Core\Korn.Installer.Core\Korn.Installer.Core.csproj", "{45C289BC-9087-45FC-B2BA-528520A357E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Utils.GithubExplorer", "..\Korn.Utils.GithubExplorer\Korn.Utils.GithubExplorer\Korn.Utils.GithubExplorer.csproj", "{D588CC6C-8EBF-40F8-B14C-17AC5106335E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Core", "..\Korn.Core\Korn.Core\Korn.Core.csproj", "{D3610F3D-63AE-4ABA-B08F-6415EDAF1058}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A9ACD95-861B-4B7C-99F2-BC03D2D93FA6}.Debug|x64.ActiveCfg = Debug|x64
+		{5A9ACD95-861B-4B7C-99F2-BC03D2D93FA6}.Debug|x64.Build.0 = Debug|x64
+		{58FBEE0D-DD5F-4CF2-83FC-9E4A8431E779}.Debug|x64.ActiveCfg = Debug|x64
+		{58FBEE0D-DD5F-4CF2-83FC-9E4A8431E779}.Debug|x64.Build.0 = Debug|x64
+		{45C289BC-9087-45FC-B2BA-528520A357E7}.Debug|x64.ActiveCfg = Debug|x64
+		{45C289BC-9087-45FC-B2BA-528520A357E7}.Debug|x64.Build.0 = Debug|x64
+		{D588CC6C-8EBF-40F8-B14C-17AC5106335E}.Debug|x64.ActiveCfg = Debug|x64
+		{D588CC6C-8EBF-40F8-B14C-17AC5106335E}.Debug|x64.Build.0 = Debug|x64
+		{D3610F3D-63AE-4ABA-B08F-6415EDAF1058}.Debug|x64.ActiveCfg = Debug|x64
+		{D3610F3D-63AE-4ABA-B08F-6415EDAF1058}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58FBEE0D-DD5F-4CF2-83FC-9E4A8431E779} = {75C76751-E594-4BAD-9788-4BDC44C5AA50}
+		{45C289BC-9087-45FC-B2BA-528520A357E7} = {75C76751-E594-4BAD-9788-4BDC44C5AA50}
+		{D588CC6C-8EBF-40F8-B14C-17AC5106335E} = {75C76751-E594-4BAD-9788-4BDC44C5AA50}
+		{D3610F3D-63AE-4ABA-B08F-6415EDAF1058} = {75C76751-E594-4BAD-9788-4BDC44C5AA50}
+	EndGlobalSection
+EndGlobal
